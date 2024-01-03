@@ -11,7 +11,8 @@ const Skills = () => {
     { skill: 'Bootstrap', icon: 'bootstrap' },
     { skill: 'TypeScript', icon: 'typescript' },
     { skill: 'Tailwind', icon: 'tailwindcss' },
-    {skill: 'Material UI', icon: 'material-ui'}
+    {skill: 'Material UI', icon: 'material-ui'},
+    {skill:'figma', icon:'figma'}
   ];
 
   const backendSkills = [
@@ -22,6 +23,8 @@ const Skills = () => {
     { skill: 'Python', icon: 'python' },
     { skill: 'NextJS', icon: 'react' },
     { skill: 'GraphQL', icon: 'graphql' },
+    {skill: 'git', icon: 'git'},
+    {skill:'github', icon:'github'}
   ];
 
   // State to track which list is active
