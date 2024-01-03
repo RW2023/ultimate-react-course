@@ -1,20 +1,17 @@
 //src/Components/Intro.jsx
-// import img from '/me.jpg';
+import SubHeading from './SubHeading';
 
 export default function Intro() {
-    // const me = img;
+  // const me = img;
   return (
-    <div className='flex flex-col justify-center bg-background p-1 border rounded-md drop-shadow-xl'>
-     {/* <div className='items-start'>
-         <img
-            className="rounded-full h-50 w-50 mx-auto border border-gray-200 justify-self-start"
-         height={50}
-            width={50}
-         src={me} alt="Ryan Wilson" />
-     </div> */}
-     <p>
-        My name is Ryan Wilson and I am a web developer based in Ontario Canada with a passion for creating beautiful, performant and functional websites.
-     </p>
+    <div className="flex flex-col justify-center bg-background p-1 border rounded-md drop-shadow-xl">
+      <SubHeading title="Hi my name is ryan wilson" iconClass="fas fa-hand-sparkles" />
+      <p>
+        I am a full stack web developer based in
+        Ontario Canada with a passion for creating beautiful, performant and
+        functional web applications. When I am not coding I enjoy spending time
+        with my family, music and true crime podcasts.
+      </p>
     </div>
-  )
+  );
 }
