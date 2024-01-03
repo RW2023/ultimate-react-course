@@ -15,7 +15,7 @@ function App() {
     <>
       <div
         className="flex justify-center items-center p-4 min-h-screen bg-base300 glass mx-auto"
-        style={{ backgroundImage: `url(${dread})`, backgroundSize: 'cover' }} // Use the dread variable as the background image
+        style={{ backgroundImage: `url(${dread})`, backgroundSize: 'cover', backgroundPosition: 'fill' }} // Use the dread variable as the background image
       >
         <div className="card card-compact w-3/4 md:w-1/2 bg-base-300 shadow-2xl border mx-auto">
           <figure>
