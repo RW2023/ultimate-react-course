@@ -5,6 +5,7 @@ import LightHeading from '../src/Components/Heading';
 import LightSubHeading from '../src/Components/SubHeading';
 import Intro from './Components/Intro';
 import SubHeading from './Components/SubHeading';
+import SkillContainer from './Components/SkillContainer';
 
 function App() {
   const me = img;
@@ -32,10 +33,7 @@ function App() {
           </div>
           <div id="skills">
             <SubHeading title="skills" iconClass="fas fa-laptop-code" />
-          </div>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Front End</button>
-            <button className="btn btn-secondary">Back End</button>
+            <SkillContainer />
           </div>
         </div>
       </div>
