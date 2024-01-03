@@ -1,17 +1,14 @@
-import { FC } from 'react';
+// Remove the unused import statement for React
 
-interface Props {
-  title: string;
-  iconClass?: string;
-}
-
-const toTitleCase = (text: string): string =>
+const toTitleCase = (text) =>
   text.replace(
     /\w\S*/g,
     (word) => word.charAt(0).toUpperCase() + word.substr(1).toLowerCase(),
   );
 
-const SubHeading: FC<Props> = ({ title, iconClass }): JSX.Element => {
+import PropTypes from 'prop-types';
+
+const SubHeading = ({ title, iconClass }) => {
   const titleCaseText = toTitleCase(title);
 
   return (
@@ -20,6 +17,11 @@ const SubHeading: FC<Props> = ({ title, iconClass }): JSX.Element => {
       {titleCaseText}
     </h2>
   );
+};
+
+SubHeading.propTypes = {
+  title: PropTypes.string.isRequired,
+  iconClass: PropTypes.string.isRequired,
 };
 
 export default SubHeading;
