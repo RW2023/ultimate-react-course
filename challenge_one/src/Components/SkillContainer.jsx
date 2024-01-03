@@ -9,22 +9,19 @@ const Skills = () => {
     { skill: 'HTML5', icon: 'html5' },
     { skill: 'CSS3', icon: 'css3-alt' },
     { skill: 'Bootstrap', icon: 'bootstrap' },
-    { skill: 'Angular', icon: 'angular' },
     { skill: 'TypeScript', icon: 'typescript' },
-    {skill: 'Tailwind', icon: 'tailwindcss' },
+    { skill: 'Tailwind', icon: 'tailwindcss' },
+    {skill: 'Material UI', icon: 'material-ui'}
   ];
 
   const backendSkills = [
     { skill: 'Node.js', icon: 'node-js' },
     { skill: 'Express', icon: 'express' },
-    { skill: 'Python', icon: 'python' },
-    { skill: 'Ruby', icon: 'ruby' },
-    { skill: 'PHP', icon: 'php' },
-    { skill: 'Java', icon: 'java' },
-    { skill: 'C#', icon: 'microsoft' },
-    { skill: 'Go', icon: 'go' },
-    { skill: 'Rust', icon: 'rust' },
     { skill: 'SQL', icon: 'database' },
+    { skill: 'MongoDB', icon: 'database' },
+    { skill: 'Python', icon: 'python' },
+    { skill: 'NextJS', icon: 'react' },
+    { skill: 'GraphQL', icon: 'graphql' },
   ];
 
   // State to track which list is active
@@ -32,15 +29,21 @@ const Skills = () => {
 
   return (
     <div>
-      <div className="flex space-x-4 my-4 card-actions justify-start">
-        <button className="btn btn-primary" onClick={() => setActiveSkills(frontendSkills)}>
-          Front End
-        </button>
-        <button className="btn btn-secondary" onClick={() => setActiveSkills(backendSkills)}>
+      <div className="flex space-x-4 my-4 card-actions justify-between p-3">
+        <button
+          className="btn btn-secondary"
+          onClick={() => setActiveSkills(backendSkills)}
+        >
           Back End
         </button>
+        <button
+          className="btn btn-primary"
+          onClick={() => setActiveSkills(frontendSkills)}
+        >
+          Front End
+        </button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 bg-base-100 border p-1 rounded-md">
+      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-3 bg-base-300 border p-1 rounded-md">
         {activeSkills.map((skill, index) => (
           <Skill key={index} skill={skill.skill} icon={skill.icon} />
         ))}
