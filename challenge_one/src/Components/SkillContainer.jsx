@@ -34,13 +34,13 @@ const Skills = () => {
     <div>
       <div className="flex space-x-4 my-4 card-actions justify-between p-3">
         <button
-          className="btn btn-secondary"
+          className="btn btn-warning"
           onClick={() => setActiveSkills(backendSkills)}
         >
           Back End
         </button>
         <button
-          className="btn btn-primary"
+          className="btn btn-success"
           onClick={() => setActiveSkills(frontendSkills)}
         >
           Front End
