@@ -20,8 +20,8 @@ export default {
         tertiary: '#4d4847ff', // Davy's Gray
       },
       fontFamily: {
-        sans: ['Poppins', 'sans'],
-        serif: ['Roboto Slab', 'serif'],
+        sans: ['Poppins', 'sans-serif'],
+        serif: ['Roboto Slab', 'sans-serif'],
       },
     },
   },
