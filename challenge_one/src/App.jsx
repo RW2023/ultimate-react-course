@@ -9,6 +9,7 @@ import Footer from './Components/Footer';
 
 function App() {
   const me = img;
+  
 
   return (
     <>
@@ -36,7 +37,6 @@ function App() {
               <Intro />
             </div>
             <div className="skills text-3xl border">
-              <SubHeading title="skills" iconClass="fas fa-laptop-code" />
               <SkillContainer />
             </div>
           </div>
