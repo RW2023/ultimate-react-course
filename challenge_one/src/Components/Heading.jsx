@@ -1,20 +1,15 @@
-// src/Components/UI/Heading.tsx
-'use client';
-import React, { FC } from 'react';
 
-interface Props {
-  title: string;
-  iconClass?: string;
-}
 
 // Function to convert text to title case
-const toTitleCase = (text: string): string =>
+const toTitleCase = (text) =>
   text.replace(
     /\w\S*/g,
     (word) => word.charAt(0).toUpperCase() + word.substr(1).toLowerCase(),
   );
 
-const Heading: FC<Props> = ({ title, iconClass }): JSX.Element => {
+import PropTypes from 'prop-types';
+
+const Heading = ({ title, iconClass }) => {
   const titleCaseText = toTitleCase(title);
 
   return (
@@ -23,6 +18,11 @@ const Heading: FC<Props> = ({ title, iconClass }): JSX.Element => {
       {titleCaseText}
     </h1>
   );
+};
+
+Heading.propTypes = {
+  title: PropTypes.string.isRequired,
+  iconClass: PropTypes.string.isRequired,
 };
 
 export default Heading;
