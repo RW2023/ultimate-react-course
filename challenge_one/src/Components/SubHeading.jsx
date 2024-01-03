@@ -1,5 +1,4 @@
-// Remove the unused import statement for React
-
+//src/Components/SubHeading.jsx
 const toTitleCase = (text) =>
   text.replace(
     /\w\S*/g,
