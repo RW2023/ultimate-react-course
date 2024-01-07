@@ -6,7 +6,7 @@ export default function Intro() {
   return (
     <div className="flex flex-col justify-center bg-background p-1 border rounded-md drop-shadow-xl">
       <SubHeading title="Hi my name is ryan wilson" iconClass="fas fa-hand-sparkles" />
-      <p>
+      <p className='text-lg'>
         I am a full stack web developer based in
         Ontario Canada with a passion for creating beautiful, performant and
         functional web applications. When I am not coding I enjoy spending time
